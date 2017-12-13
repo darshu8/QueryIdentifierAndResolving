@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+var obj=[{"qid":"2", "qname":"what is your college name?","answers":[ {"id":"0","answername":"MGM","postedBy":"MGM"},  {"id":"0","answername":"SGGS","postedBy":"MGM"},  {"id":"0","answername":"MATOSHRI","postedBy":"MGM"},  {"id":"0","answername":"ddd","postedBy":"MGM"}]}, {"qid":"3", "qname":"where  are you?","answers":[ {"id":"0","answername":"PUNE","postedBy":"MGM"},  {"id":"0","answername":"NANDED","postedBy":"MGM"},  {"id":"0","answername":"AURANGABAD","postedBy":"MGM"},  {"id":"0","answername":"ddd","postedBy":"MGM"}]}, {"qid":"5", "qname":"how are you?","answers":[ {"id":"0","answername":"GOOD","postedBy":"MGM"},  {"id":"0","answername":"FINE","postedBy":"MGM"},  {"id":"0","answername":"SO SO","postedBy":"MGM"},  {"id":"0","answername":"ddd","postedBy":"MGM"}]}]
+
+for(var i=0;i<obj.length;i++){
+var question=obj[i];
+var answer=question.answers;
+alert(question.qid+"  "+question.qname+" "+"  ANSWERS  1."+answer[0].answername+" 2."+answer[1].answername+"  3."+answer[2].answername);
+
+
+}
+</script>
+
+<body>
+
+</body>
+</html>
