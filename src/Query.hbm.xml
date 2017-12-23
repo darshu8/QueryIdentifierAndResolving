@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 Dec, 2017 1:01:22 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="pojo.Query" table="QUERY">
+        <id name="fid" type="int">
+            <column name="FID" />
+            <generator class="native" />
+        </id>
+        <property name="qid" type="int">
+            <column name="QID" />
+        </property>
+        <property name="sid" type="int">
+            <column name="SID" />
+        </property>
+        <property name="qstatus" type="java.lang.String">
+            <column name="QSTATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

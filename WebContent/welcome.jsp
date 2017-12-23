@@ -1,7 +1,7 @@
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,18 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Welcome...
-	<c:out value="${user}"></c:out>
-
-	<table border="1">
-
-		<c:forEach var="employee" items="${emp}">
-			<tr>
-				<td>${employee.username}</td>
-				<td>${employee.password}</td>
-			</tr>
-		</c:forEach>
-	</table>
-
+hey there <c:out value="${name}"></c:out>
+<c:out value="${pass}"></c:out>
 </body>
 </html>
