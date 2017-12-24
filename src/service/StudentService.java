@@ -19,4 +19,12 @@ public class StudentService {
 		studentDAO.insert(student);
 	}	
 	
+	public static Student validateStudent(Student student) {
+		Resource resource=new ClassPathResource("application.xml");
+		BeanFactory beanFactory=new XmlBeanFactory(resource);
+		StudentDAO studentDAO=(StudentDAO)beanFactory.getBean("studentObj");
+		return studentDAO.validateStudent(student);
+	}
+	
+	
 }

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/StudentHomepage.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+.buttongreen {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.buttonred {
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.buttoncyan {
+    background-color: cyan; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+img {
+    border-radius: 8px;
+}
+span.psw {
+    float: right;
+    padding-top: 60px;
+}
+
+</style>
+
+  
+  
+  </head>
+  <body>
+ 
+  
+  
+<div class="container">
+	<div class="imgcontainer">
+	<table class="table table-striped table-hover">	
+    <tr>
+	<td>
+	<img src="images/studentlogin.jpg" alt="" width="200" height="200">
+	
+	</td>
+	<td>
+	<td>
+	<b>Name :<b><BR><BR>
+	<b>BATCH :<b><BR><BR>
+	<b>PC :<b><BR><BR>
+	<b>LAB :<b><BR><BR>
+
+	</td>
+	<td>
+	<B>KUSHAL KARRE</p>
+	<p>BATCH A</p>
+	<p>35</p>
+	<p>LAC C</p>
+			<span class="psw">Faculty<a href="Facultyfeedback.html"> FEEDBACK?</a></span>
+	</td>
+		
+	</td>
+	<tr>
+	</table>
+		
+  </div>
+	<div class="row">
+		
+		<div class="panel panel-primary">
+		    <div class="panel-heading">
+		        <h3>List of Faculty
+    	        </h3>
+		    </div>
+		    <table class="table table-striped table-hover">
+		        <thead>
+		            <tr>
+		                <th class="col-check"></th>
+		                <th>Id</th>
+		                <th>FacultyName</th>
+		                <th>Status</th>
+						<th>Send Query</th>
+		                <th>Cancel Query</th>
+		                <th>Query Status</th>
+		                
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr class="success">
+		                <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+		                <td>1</td>
+		                <td>ZYX987</td>
+		                <td>Online</td>
+						<td><button class="buttongreen button2">Send Query</button></td>
+		                <td><button class="buttonred button2">Reject Query</button></td>
+						<td><button class="buttonred button1">Pending.....</button></td>
+		                
+		            </tr>
+		            <tr class="success">
+		                <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+		                <td>2</td>
+		                <td>WVU654</td>
+						 <td >Online</td>
+						<td><button class="buttongreen button2">Send Query</button></td>
+		                <td><button class="buttonred button2">Reject Query</button></td>
+						<td><button class="buttonred button1">Pending......</button></td>						
+		                		            </tr>
+		            <tr class="danger">
+		                <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+		                <td>3</td>
+		                <td>TSR321</td>
+		                <td>Offline</td>
+						<td><button class="buttongreen button2">Send Query</button></td>
+		                <td><button class="buttonred button2">Reject Query</button></td>
+						<td><button class="buttoncyan button1">Query Not Send </button></td>
+		            </tr>
+		            <tr class="danger">
+		                <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+		                <td>4</td>
+		                <td>QPO987</td>
+		                <td >Offline</td>
+						<td><button class="buttongreen button2">Send Query</button></td>
+		                <td><button class="buttonred button2">Reject Query</button></td>
+						<td><button class="buttongreen button1">Approved</button></td>
+		                
+		            </tr>
+		            <tr class="danger">
+		                <td class="col-check"><input type="checkbox" class="form-check-input"></td>
+		                <td>5</td>
+		                <td>NML654</td>
+		                <td >Offline</td>
+						<td><button class="buttongreen button2">Send Query</button></td>
+		                <td><button class="buttonred button2">Reject Query</button></td>
+						<td><button class="buttongreen button1">Approved</button></td>
+							
+					</tr>
+		        </tbody>
+			
+			</table>
+		</div>
+	</div>
+	
+</div>
+	
+<body>
